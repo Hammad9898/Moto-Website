@@ -1,0 +1,719 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0; padding:0;}
+
+header, section, nav, main, footer{
+display:block;	
+	}	
+img, iframe{
+max-width:100%;	
+	}
+body{
+	font-family:Arial;
+	}
+body h1,h2,h3,p{
+cursor:pointer;	
+	}
+.head{
+	
+background:url(../images/pattern.png) left top repeat;	}	
+a{
+	text-decoration:none !important;
+	transition:all 1s ease;
+	}
+/*--------------------image effect--------------------*/
+
+
+.rc{
+	margin:0 auto !important;
+	
+	}
+#rig{
+	text-align:center !important;
+	}
+#rig .rc {
+   
+   max-width:270px !important;
+   max-height:273px !important;
+    vertical-align:middle !important;
+    box-sizing:border-box !important;
+    
+   
+}
+        
+/* The wrapper for each item */
+.rig-cell {
+    /*margin:12px;
+    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
+    display:block !important;
+    position: relative !important;
+    overflow:hidden !important;
+}
+        
+/* If have the image layer */
+.rig-img {
+    display:block !important;
+    width: 100% !important;
+    height: auto !important;
+    border:none !important;
+    transform:scale(1) !important;
+    transition:all 1s !important;
+	
+}
+
+#rig .rc:hover .rig-img {
+    transform:scale(1.05) !important;
+}
+
+        
+/* If have the overlay layer */
+.rig-overlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #c00101 url(img/link.png) no-repeat center 20%;
+    background-size:50px 50px !important;
+    opacity:0;
+    filter:alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.6s;
+}
+#rig .rc:hover .rig-overlay {
+    opacity:0.8;
+}
+
+/* If have captions */
+.rig-text {
+    display:block;
+    padding:0 30px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    text-transform:capitalize;
+    font-size:18px;
+    font-weight:bold;
+    font-family: 'Oswald', sans-serif;
+    font-weight:normal!important;
+    top:40%;
+    color:white;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+    transform:translateY(-20px);
+    transition:all .3s;
+}
+#rig .rc:hover .rig-text {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+#rig .fc:hover .rig-text {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+
+/*---------------------end image effect--------------*/
+
+
+
+
+
+.logo{
+	padding-top:61px;
+	}
+.social{
+	font-size:25px;
+	text-align:right !important;
+		
+	}
+.fb, .tw, .gp{
+	color:#c00e0e;
+	border-radius:100%;
+	height:50px !important;
+	width:50px !important;
+	padding-top:13px;
+	margin-top:55px;
+	vertical-align:middle !important;
+	text-align:center !important;
+    box-sizing:border-box;
+	background-color:#2c2c2c;
+		transition:all 1s ease;
+	}
+.gp{
+	margin-left:5px;
+	margin-right:5px; 
+	}
+.gp:hover{
+		background-image:-webkit-linear-gradient(bottom,#bc0000 50%, #c71919 30%);
+		background-image:-moz-linear-gradient(bottom,#bc0000 50%, #c71919 30%);
+		background-image:-o-linear-gradient(bottom,#bc0000 50%, #c71919 30%);
+		background-image:-ms-linear-gradient(bottom,#bc0000 50%, #c71919 30%);		
+		color:#fff;
+		}
+.tw:hover{
+		background-image:-webkit-linear-gradient(bottom,#bc0000 50%, #c71919 30%);
+		background-image:-moz-linear-gradient(bottom,#bc0000 50%, #c71919 30%);
+		background-image:-o-linear-gradient(bottom,#bc0000 50%, #c71919 30%);
+		background-image:-ms-linear-gradient(bottom,#bc0000 50%, #c71919 30%);
+		color:#fff;
+		}
+.fb:hover{
+		background-image:-webkit-linear-gradient(bottom,#bc0000 50%, #c71919 30%);
+		background-image:-moz-linear-gradient(bottom,#bc0000 50%, #c71919 30%);
+		background-image:-o-linear-gradient(bottom,#bc0000 50%, #c71919 30%);
+		background-image:-ms-linear-gradient(bottom,#bc0000 50%, #c71919 30%);
+		color:#fff;
+		}
+.nav1 li{
+display:inline-block;	
+	}
+.nav{
+	background-image:-webkit-linear-gradient(bottom,#bc0000 50%, #c71919 30%);
+background-repeat:no-repeat;
+		background-image:-moz-linear-gradient(bottom,#bc0000 50%, #c71919 30%);
+		background-image:-o-linear-gradient(bottom,#bc0000 50%, #c71919 30%);
+		background-image:-ms-linear-gradient(bottom,#bc0000 50%, #c71919 30%);
+	height:58px;
+	
+}
+.nav1{
+	line-height:58px;
+	}
+.nav1 li a{
+padding:20px 20px;	
+color:#fff;
+font-weight:bold;
+font-size:1.2em;
+
+	}	
+.nav1 li a:hover{
+background-image:-webkit-linear-gradient(bottom,#242424 50%, #313131 30%);
+background-image:-moz-linear-gradient(bottom,#242424 50%, #313131 30%);
+background-image:-o-linear-gradient(bottom,#242424 50%, #313131 30%);
+background-image:-ms-linear-gradient(bottom,#242424 50%, #313131 30%);
+	text-shadow:0 0 30px #FFF;
+	color:#242424;
+	}
+
+
+.nav2{
+	display:none;
+	}
+.section{
+	padding:30px 0;
+	}
+p{
+	color:#fff;
+	}
+h1{
+	font-size:3.100em !important;
+	color:#fff !important;
+	font-weight:bold !important;
+	}
+.gr{
+	padding-top:20px;
+	color:#c00e0e !important;
+	font-weight:normal !important;
+	}
+.btn1{
+	height:53px;
+	width:272px;
+	background:url(../images/img2.png)left center no-repeat;
+	}
+.s_btn{
+	height:53px;
+	width:272px;
+	background:url(../images/s_img2.png)left center no-repeat;
+	}
+.s_btn:hover{
+	height:53px;
+	background:url(../images/s_img1.png)left center no-repeat;
+	}
+
+.btn1:hover{
+	height:53px;
+	background:url(../images/img1.png)left center no-repeat;
+	}
+
+.btn1 a{
+	vertical-align:central;
+	display:table-cell;
+	color:#fff;
+	font-size:1em;
+	line-height:53px;
+	font-weight:bold;
+	padding-left:10px;
+		}
+.s_btn a{
+	vertical-align:central;
+	display:table-cell;
+	color:#fff;
+	font-size:1em;
+	line-height:53px;
+	font-weight:bold;
+	padding-left:10px;
+		}
+.s_btn a:hover{
+	color:#fff !important;
+		}
+.btn1 a:hover{
+	color:#fff !important;
+		}
+
+.race_info {
+	z-index: 20001; background: linear-gradient(rgb(47, 48, 45), rgb(33, 33, 33));
+	}
+.race_info_right>p{
+	padding:30px 0 50px 0;
+	font-size:0.900em;
+	}
+.blog{
+	z-index: 20064; background: linear-gradient(rgb(51, 51, 51), rgb(34, 34, 34));
+	
+	}
+.latest_img{
+	padding-top:30px;
+	}
+.latest_txt{
+	
+	padding-top:20px;
+	}
+.latest_txt p{
+	color:#888888 !important;
+	font-size:0.900em;
+    }
+.Features h3{
+	color:#c00e0e;
+	font-size:0.900em;
+	font-weight:bold;
+	padding-bottom:15px;
+	}
+.Features h3:hover{
+	color:#fff;
+	
+	}
+.see{
+	margin:50px 0;
+	}
+.Features .btn1{
+	margin-bottom:10px;
+		
+	background:url(../images/img1.png)left center no-repeat !important;
+	}
+.Features .btn1:hover{
+	background:url(../images/img2.png)left center no-repeat !important;
+	}
+.parallex{
+	background:url(../images/page-1_img08.jpg) no-repeat center fixed;
+	padding:50px 0 !important;
+	}
+.parallex p{
+	color:#fff !important;
+	font-size:0.800em !important;
+    padding:15px 0;
+}
+
+.racers{
+	z-index: 20064; 
+	background: linear-gradient(rgb(51, 51, 51), rgb(34, 34, 34)); 
+	 }
+	
+.racers p{
+	color:#888888 !important;
+	font-size:0.900em !important;
+    padding:10px 0;
+	}
+#owl-demo .item{
+  margin: 3px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}	
+.photos{
+	background:url(../images/pattern.png) left top repeat;
+	}
+.photos h1{
+	padding-bottom:20px;
+	}
+.footer{
+	height:90px;
+	background:#191919;
+	}
+.footer_left p{
+	margin-top:35px;
+	color:#888888;
+	}
+.footer_nav{
+	margin-top:35px;
+	}
+.footer_nav li{
+	display:inline;
+
+	}
+.footer_nav a{
+	
+padding:10px 8px;	
+color:#fff;
+font-weight:bold;
+font-size:0.800;
+	}
+.footer_nav li a:hover{
+text-shadow:0 0 30px #FFF;
+	color:#c00e0e;
+	
+	}
+	
+/*---------------ABOUT ----------------------*/
+
+.choose_us{
+	
+	background:url(../images/about_imgs/page-2_img01.jpg) no-repeat center center  ;
+
+	padding:60px 0 !important;
+	}
+.choose_us p{
+	font-size:0.950em;
+	padding-top:15px;
+	}
+.choose_us ul{
+	list-style:none;
+	margin-bottom:50px;
+	box-sizing:border-box;
+	}
+.ar{
+	
+	color:#FFF;
+	font-size:0.800em;
+	}
+.choose_us ul li{
+	margin:10px 0 !important;
+	}
+.choose_us ul a{
+	padding-left:5px;
+	text-decoration:none;
+	color:#fff;
+	transition:none !important;
+	font-size:1.200em;
+	
+	}
+.choose_us ul a:hover{
+	
+	color:#c00e0e;
+	}
+.choose_us ul .ar:hover{
+	
+	color:#c00e0e;
+	}
+.we_do, .our_racers{
+	background-color:#191919;
+	}
+.section h1{
+	padding-bottom:20px !important;
+	}
+.we_right h3{
+	font-size:1.400em;
+	color:#c00101;
+	
+	}
+.racers_info h3{
+	font-size:1.400em;
+	color:#c00101;
+	font-weight:bold;
+	}
+.our_racers h3{
+	font-size:1.400em;
+	color:#c00101;
+	padding-bottom:5px;
+	font-weight:bold;
+}
+.our_racers p{
+	
+	color:#888888;
+	}
+/*
+.our_racers img:hover{
+	-webkit-filter: sepia(100%);
+	-moz-filter: sepia(100%);
+	-o-filter: sepia(100%);
+    -ms-filter: sepia(100%);
+	}
+	*/
+
+.our_racers h3:hover{
+color:#fff;
+	}
+.racers_info h3:hover{
+color:#fff;
+	}
+.we_right p{
+	padding-top:15px;
+	font-size:1.100em;
+		}
+.racers_info p{
+	padding-top:20px;
+	font-size:1.100em;
+		}
+.racers_info .s_btn{
+	margin-top:40px;
+	
+		}
+
+.we_right .s_btn{
+	margin-top:27px;
+	}
+.racers_info{
+	background:url(../images/about_imgs/page-2_img10.jpg) no-repeat center center  ;
+
+	padding:60px 0 !important;
+	}
+.choose_bike, .new{
+	background:url(../images/pattern.png) left top repeat;
+	}
+.choose_bike h3{
+	font-size:1.400em;
+	color:#c00101;
+	font-weight:bold;
+	padding-bottom:20px;
+	}
+.choose_bike h3:hover{
+		color:#fff;
+	}
+	
+/*------------events------------------*/	
+.s_winter{
+	
+	/*z-index: 20064; 
+	background: linear-gradient(rgb(51, 51, 51), rgb(34, 34, 34));*/	
+	z-index: 20001; background: linear-gradient(rgb(47, 48, 45), rgb(33, 33, 33));
+	
+	}
+.s_winter h3{
+	font-size:1.400em;
+	color:#C00101;
+	padding-bottom:5px;
+	font-weight:bold;
+	}
+.s_winter h3:hover{
+	color:#FFF;
+    }
+table{
+	margin-top:25px !important;  
+	color:#FFF;
+	text-align:center;
+	}
+th{
+	text-align:center !important;
+	font-size:1.200em;
+	
+	}
+.ticket{
+	background-color:#101010;
+	padding-bottom:60px !important;
+	}
+.ticket h3{
+	color:#fff !important;
+	
+	}
+.ticket p{
+	color:#888888 !important;
+	font-size:0.900em;
+	} 
+/*--------------NEWS-----------*/
+
+.news{
+	background:url(../images/new_img/page-4_img01.jpg) center center scroll;
+	 }
+.news h3{
+	font-size:1.400em;
+	color:#C00101;
+	padding-bottom:5px;
+	font-weight:bold;
+	}
+.news h3:hover{
+	
+	color:#fff;
+		}
+.events, .popular{
+	
+background-color:#101010;	
+	
+}
+.date{
+	text-align:center;
+	padding-bottom:33px;
+	}
+
+.date h2{
+	font-size:4.500em;
+	color:#c00101;
+	font-weight:bold;
+	}
+.date p{
+	font-size:1.700em;
+	color:#c00101;
+	
+	}
+.events h3{
+	font-size:1.300em;
+	color:#c00101;
+	font-weight:bold;
+	}
+.et_txt p{
+	font-size:0.800em;
+	color:#888888;
+	
+	}
+#map{
+width:100%;
+height:400px;	
+	}
+.dates{
+	padding-bottom:20px;
+	box-sizing:border-box;
+	border-bottom:#888 2px solid;
+	}
+.popular figure{
+	padding-top:20px;
+	}
+.popular img{
+	-webkit-filter:sepia(100%);
+	-moz-filter:sepia(100%);
+	-ms-filter:sepia(100%);
+	-o-filter:sepia(100%);
+
+	transition:all 1s ease !important;
+	
+	}
+.popular img:hover{
+   -webkit-filter:sepia(0);
+	-moz-filter:sepia(0);
+	-ms-filter:sepia(0);
+	-o-filter:sepia(0);
+	}
+
+.popular_ctr{
+	padding-top:145px !important;
+	}
+.pop_news img{
+	-webkit-filter:sepia(0) !important;
+	-moz-filter:sepia(0) !important;
+	-ms-filter:sepia(0)!important;
+	-o-filter:sepia(0)!important;
+}
+.pop_news h3{
+	font-size:1.600em;
+	color:#c00101;
+	font-weight:bold;
+	}
+
+.pop_news .s_btn{
+	margin:50px 0;
+	}
+.form_bg, .news{
+	z-index: 20064; 
+	background: linear-gradient(rgb(51, 51, 51), rgb(34, 34, 34)); 
+	}
+.new h3{
+	font-size:1.400em;
+	color:#c00101;
+	font-weight:bold;
+	padding:0 0 0 10px;
+	}
+.new h3:hover{
+		color:#fff;
+		
+		}
+
+.new p{
+	padding-bottom:20px;
+	}
+
+.form h3{
+	color:#c00101;
+	}
+.fm h1{
+	padding-bottom:35px !important;
+	}
+.form p{	
+padding-top:10px;
+	}
+.black{
+	background-color:#101010 !important;
+	border:#101010 1px solid !important;
+	}
+@media screen and (max-width:960px){
+	
+	.head{
+		height:auto;
+		
+		}
+	
+
+	}
+@media screen and (max-width:768px){
+	
+	.nav{
+		display:none;
+		}
+	.social{display:none !important;}
+	.head{
+		height:auto;
+		}
+	.logo{
+		padding-top:0 !important;
+		margin:10px 0; 
+		}
+	.nav2{
+		display:block;
+        padding-bottom:10px;
+		
+		}
+	.nav2 select{
+		width:100%;
+        color:#101010;
+		outline:#c00e0e;
+		font-weight:bold;
+		}
+	
+	.footer_nav {
+		text-align:center;
+		}
+	.footer_left p{
+		text-align:center;
+		}
+	.footer{
+		height:auto !important;
+		}
+	
+	.ticket, .ctr, .racer {
+		text-align:center !important;
+	    }
+	.popular_ctr{
+	padding-top:0 !important;
+	}
+@media screen and (max-width:480px){
+
+.choose_us{
+		background:url(../images/about_imgs/page-2_img01.jpg) no-repeat  center center;
+	}
+.choose_us ul{
+	
+	margin-bottom:20px !important;
+
+	
+	}
+	.racers_info{
+padding:10px 0 !important;
+	}
+.racers_info{
+	background:url(../images/about_imgs/page-2_img10.jpg)  repeat-y center center  ;
+}
+
+@media screen and (max-width:320px){
+	
+	}
